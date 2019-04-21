@@ -16,7 +16,7 @@ info_list = list(config.items('INFO_LIST'))
 config_for_url = configparser.RawConfigParser()
 config_for_url.read('config.ini')
 url = config_for_url.get('URL','url')
-print url
+
 driver = webdriver.Chrome()
 driver.get(url)
 
@@ -42,7 +42,7 @@ def auto_order():
             seletem_item.send_keys(content_name) 
         # 勾选
         driver.find_element_by_id(policy_id).click()
-        time.sleep(4)
+
         # 确认
         driver.find_element_by_xpath(confirm_xpatch).click()
 
