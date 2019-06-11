@@ -8,7 +8,7 @@ sleep(500).then(() => {
     // 这里写sleep之后需要去做的事情
 })
 await sleep(1500)
-$('input[name="query"]')[0].value = "perfet"
+$('input[name="query"]')[0].value = "Perfect"
 $('#button').click()
 await sleep(1500);
 $('.download.1')[0].click()
